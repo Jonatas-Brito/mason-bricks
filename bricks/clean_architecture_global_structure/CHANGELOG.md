@@ -1,3 +1,3 @@
 # 0.1.0
 
-- TODO: Describe initial release.
+- feat: Clean Architecture Global Structure brick.
