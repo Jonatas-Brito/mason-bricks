@@ -2,7 +2,7 @@ name: clean_architecture_global_structure
 description: A brick to create a feature with a clean architecture structure and its respective files in the root of your project.
 repository: https://github.com/Jonatas-Brito/mason-bricks/tree/master/bricks/clean_architecture_global_structure
 
-version: 0.1.1
+version: 0.1.2
 
 environment:
   mason: ">=0.1.0-dev.26 <0.1.0"
