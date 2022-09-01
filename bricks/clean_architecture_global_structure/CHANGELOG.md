@@ -1,3 +1,7 @@
+# 0.1.2
+
+- feat: include use case class and failures abstract class.
+
 # 0.1.1
 
 - feat: set up to publish in brickhub.
