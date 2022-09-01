@@ -87,6 +87,19 @@ Generate a clean architecture structure with its respective files (Data sources,
 
 ```
 ├── lib
+│   ├── application_layer
+│   │   ├── auth
+│   │   │   ├── pages
+│   │   │   │   └── auth_page.dart
+│   │   │   ├── widgets
+│   │   │   │   └── .gitkeep
+│   │   │   └── ...
+│   │   └── ...
+│   ├── core
+│   │   ├── errors
+│   │   │   └── failures.dart
+│   │   ├── usecases
+│   │   │   └── usecase.dart
 │   ├── data
 │   │   ├── datasources
 │   │   │   └── auth.dart
@@ -103,14 +116,6 @@ Generate a clean architecture structure with its respective files (Data sources,
 │   │   ├── usecases
 │   │   │   └── auth_use_case.dart
 │   │   └── ...
-│   ├── application_layer
-│   │   ├── auth
-│   │   │   ├── pages
-│   │   │   │   └── auth_page.dart
-│   │   │   ├── widgets
-│   │   │   │   └── .gitkeep
-│   │   │   └── ...
-│   │   └── ...
 │   └── ...   
 └── ...
 ```
@@ -122,13 +127,12 @@ Generate a clean architecture structure with its respective files (Data sources,
 #### Datasource class
 
 ```dart
-    abstract class AuthDataSource {
-    // TODO: implement your AuthDataSource
-    }
+abstract class AuthDataSource {
+// TODO: implement your AuthDataSource
 
-    class AuthDataSourceImpl implements AuthDataSource {
-    // TODO: implement your AuthDataSourceImpl
-    }
+class AuthDataSourceImpl implements AuthDataSource {
+// TODO: implement your AuthDataSourceImpl
+}
 ```
 
 #### Model class
@@ -197,6 +201,36 @@ class AuthUseCase implements UseCase<void, AuthParams> {
 class AuthParams {
   // TODO: implement your AuthParams
   const AuthParams();
+}
+```
+
+### Core
+
+#### Use case
+
+```dart
+import 'package:dartz/dartz.dart';
+import 'package:any/core/errors/failures.dart';
+
+abstract class UseCase<Output, Input> {
+  Future<Either<Failure, Output>> call(Input params);
+}
+```
+
+#### Failures
+
+```dart
+import 'package:equatable/equatable.dart';
+
+abstract class Failure extends Equatable {
+  final int? statusCode;
+  final String? responseMessage;
+  final Exception? exception;
+
+  const Failure([this.statusCode, this.responseMessage, this.exception]);
+
+  @override
+  List<Object?> get props => [statusCode, responseMessage, exception];
 }
 ```
 

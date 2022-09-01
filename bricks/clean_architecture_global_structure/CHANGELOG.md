@@ -1,3 +1,6 @@
+# 0.1.3
+
+- feat: update documentation.
 # 0.1.2
 
 - feat: include use case class and failures abstract class.
