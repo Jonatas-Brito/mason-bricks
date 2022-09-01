@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 
 import 'package:{{{package_name}}}/core/usecases/usecase.dart';
-import 'package:{{{package_name}}}/core/error/failure.dart';
+import 'package:{{{package_name}}}/core/errors/failures.dart';
 
 class {{feature_name.pascalCase()}}UseCase implements UseCase<void, {{feature_name.pascalCase()}}Params> {
   // TODO: implement the output of your {{feature_name.pascalCase()}}UseCase
