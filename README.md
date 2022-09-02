@@ -20,11 +20,11 @@ A collection of bricks that enable developers to be more productive when writing
 
 ## Documentation
 
-- [Clean Architecture Global Structure](https://github.com/Jonatas-Brito/mason_bricks/tree/master/bricks/clean_architecture_global_structure)
+- [Clean Architecture Global Structure](https://github.com/Jonatas-Brito/mason-bricks/tree/master/bricks/clean_architecture_global_structure)
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/Jonatas-Brito/mason_bricks/tree/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/Jonatas-Brito/mason-bricks/tree/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Maintainers
 
