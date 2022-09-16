@@ -129,6 +129,7 @@ Generate a clean architecture structure with its respective files (Data sources,
 ```dart
 abstract class AuthDataSource {
 // TODO: implement your AuthDataSource
+}
 
 class AuthDataSourceImpl implements AuthDataSource {
 // TODO: implement your AuthDataSourceImpl
