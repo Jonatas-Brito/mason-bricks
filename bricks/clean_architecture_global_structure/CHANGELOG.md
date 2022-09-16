@@ -1,3 +1,6 @@
+# 0.1.4
+- doc: fix documentation
+
 # 0.1.3
 
 - feat: update documentation.
